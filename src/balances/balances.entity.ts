@@ -18,13 +18,13 @@ export class Balance {
   value: number;
 
   @ManyToOne(
-    type => User,
+    () => User,
     user => user.balances,
   )
   user!: User;
 
   @ManyToOne(
-    type => Group,
+    () => Group,
     group => group.balances,
   )
   group!: Group;

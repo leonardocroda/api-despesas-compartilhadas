@@ -27,7 +27,7 @@ export class User {
   password: string;
 
   @ManyToMany(
-    type => Group,
+    () => Group,
     group => group.users,
   )
   groups: Group[];
@@ -45,7 +45,7 @@ export class User {
   payments: Payment[];
 
   @OneToMany(
-    type => Balance,
+    () => Balance,
     balance => balance.user,
   )
   balances: Balance[];

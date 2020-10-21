@@ -21,7 +21,7 @@ export class Group {
   name: string;
 
   @ManyToMany(
-    type => User,
+    () => User,
     user => user.groups,
   )
   @JoinTable()
@@ -34,7 +34,7 @@ export class Group {
   expenses: Expense[];
 
   @OneToMany(
-    type => Balance,
+    () => Balance,
     balance => balance.group,
   )
   balances: Balance[];
