@@ -1,6 +1,6 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework API of Despesas Compartilhadas App.
+API of Despesas Compartilhadas App developed using [Nest](https://github.com/nestjs/nest) framework.
 
 ## Installation
 
